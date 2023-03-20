@@ -1,0 +1,55 @@
+<div *ngIf="weatherService.hourWeather.value" class="slider">
+
+    <button (click)="onClickPrev()">&#10094;</button>
+
+    <div class="card" *ngIf="weatherService.weather.value?.timeHours !== null">
+        <p class="hour">{{ weatherService.weather.value.timeHours }}h</p>
+        <p class="temp">{{ weatherService.hourWeather.value[weatherService.weather.value.timeHours].temp }}</p>
+        <img src="{{ weatherService.hourWeather.value[weatherService.weather.value.timeHours].icon }}">
+    </div>
+
+    <div class="line"></div>
+
+    <div class="card" *ngIf="weatherService.hourWeather.value !== null">
+        <p class="hour">{{ weatherService.weather.value.timeHours + 1 }}h</p>
+        <p class="temp">{{ weatherService.hourWeather.value[weatherService.weather.value.timeHours + 1].temp }}</p>
+        <img src="{{ weatherService.hourWeather.value[weatherService.weather.value.timeHours + 1].icon }}">
+    </div>
+
+    <div class="line"></div>
+
+    <div class="card" *ngIf="weatherService.hourWeather.value !== null">
+        <p class="hour">{{ weatherService.weather.value.timeHours + 2 }}h</p>
+        <p class="temp">{{ weatherService.hourWeather.value[weatherService.weather.value.timeHours + 2].temp }}</p>
+        <img src="{{ weatherService.hourWeather.value[weatherService.weather.value.timeHours + 2].icon }}">
+    </div>
+
+    <div class="line"></div>
+
+    <div class="card" *ngIf="weatherService.hourWeather.value !== null">
+        <p class="hour">{{ weatherService.weather.value.timeHours + 3 }}h</p>
+        <p class="temp">{{ weatherService.hourWeather.value[weatherService.weather.value.timeHours + 3].temp }}</p>
+        <img src="{{ weatherService.hourWeather.value[weatherService.weather.value.timeHours + 3].icon }}">
+    </div>
+
+    <div class="line"></div>
+
+    <div class="card" *ngIf="weatherService.hourWeather.value !== null">
+        <p class="hour">{{ weatherService.weather.value.timeHours + 4 }}h</p>
+        <p class="temp">{{ weatherService.hourWeather.value[weatherService.weather.value.timeHours + 4].temp }}</p>
+        <img src="{{ weatherService.hourWeather.value[weatherService.weather.value.timeHours + 4].icon }}">
+    </div>
+
+    <div class="line"></div>
+
+    <div class="card" *ngIf="weatherService.hourWeather.value !== null">
+        <p class="hour">{{ weatherService.weather.value.timeHours + 5 }}h</p>
+        <p class="temp">{{ weatherService.hourWeather.value[weatherService.weather.value.timeHours + 5].temp }}</p>
+        <img src="{{ weatherService.hourWeather.value[weatherService.weather.value.timeHours + 5].icon }}">
+    </div>
+
+    <!-- <div class="card">{{ weatherService.weather.value.timeHours + 1 }}</div>
+    <div class="card">{{ weatherService.weather.value.timeHours + 2 }}</div>
+    <div class="card">{{ weatherService.weather.value.timeHours + 3 }}</div> -->
+    <button (click)="onClickNext()">&#10095;</button>
+</div>

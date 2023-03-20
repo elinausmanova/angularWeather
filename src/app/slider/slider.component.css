@@ -1,0 +1,41 @@
+.slider {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 60vw;
+    margin: 20px;
+}
+
+.card {
+    height: 100px;
+    width: 20%;
+    /* border: 1px solid #0b4554; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    color: #0b4554;
+}
+
+.line {
+    /* border-left: 1px solid #95b1b8; */
+    border-left: 1px solid #fff;
+    height: inherit;
+}
+
+.hour {
+    color: #0b4554;
+    font-size: 12px;
+}
+
+.temp {
+    color: #0b4554;
+    font-size: 14px;
+    font-weight: 500;
+}

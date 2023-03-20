@@ -1,0 +1,21 @@
+<div *ngIf="weatherService.dayWeather.value">
+    <h3>Day Weather</h3>
+    <div class="temperatures">
+        <div>Average T&#176;C</div>
+        <div>{{ weatherService.dayWeather.value.average }}</div>
+    </div>
+
+    <div class="temperatures">
+        <div>Max T&#176;C</div>
+        <div>{{ weatherService.dayWeather.value.max }}</div>
+    </div>
+
+    <div class="temperatures">
+        <div>Min T&#176;C</div>
+        <div>{{ weatherService.dayWeather.value.min }}</div>
+    </div>
+    <!-- <p>Average T&#176;C {{ weatherService.dayWeather.value.average }}</p> -->
+    <!-- <p>Max T&#176;C {{ weatherService.dayWeather.value.max }}</p>
+    <p>Min T&#176;C {{ weatherService.dayWeather.value.min }}</p>
+    <p>{{ weatherService.dayWeather.value.condition }}</p> -->
+</div>

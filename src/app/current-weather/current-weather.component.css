@@ -1,0 +1,48 @@
+.current-weather {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.weatherData {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    height: 128px;
+    width: 128px;
+}
+
+.temp {
+    font-size: 64px;
+    color: #d6ecf2;
+    font-weight: 700;
+}
+
+.date, .location, .condition, .feels {
+    color: #0b4554;
+    font-weight: 400;
+    
+}
+
+.date {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.location {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.condition, .feels {
+    font-size: 12px;
+}

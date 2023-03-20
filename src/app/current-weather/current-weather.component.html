@@ -1,0 +1,16 @@
+<div class="current-weather" *ngIf="weatherService.weather.value.date">
+  <div class="weatherData">
+    <div class="dateLocation">
+      <p class="date">{{ weatherService.weather.value.date }}</p>
+      <p class="location">{{ weatherService.weather.value.location }}</p>
+    </div>
+
+    <p class="temp">{{ weatherService.weather.value.temp }}</p>
+    <div>
+      <p class="feels">Feels like {{ weatherService.weather.value.feelslike }}</p>
+      <p class="condition">{{ weatherService.weather.value.condition }}</p>
+    </div>
+  </div>
+
+  <img src="{{ weatherService.weather.value.img }}">
+</div>

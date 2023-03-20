@@ -1,0 +1,19 @@
+.weather-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+app-input-city {
+    margin-top: 40px;
+}
+
+app-slider {
+    margin-bottom: 40px;
+}
+
+.day-hour {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
